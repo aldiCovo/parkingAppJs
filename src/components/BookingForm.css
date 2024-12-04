@@ -1,0 +1,77 @@
+/* Formulir */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px auto;
+  width: 90%; /* Sesuaikan dengan layar */
+  max-width: 400px; /* Batas maksimal */
+  background-color: #f9f9f9; /* Warna latar belakang formulir */
+  padding: 20px;
+  border-radius: 8px; /* Sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+}
+
+/* Div dalam Formulir */
+form div {
+  margin-bottom: 15px; /* Jarak antar input lebih besar */
+  width: 100%;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold; /* Menebalkan teks label */
+  color: #333; /* Warna label lebih gelap */
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Garis border abu-abu */
+  border-radius: 4px; /* Sudut membulat pada input */
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Transisi border saat hover */
+}
+
+input:focus {
+  border-color: #4caf50; /* Warna border saat input aktif */
+  outline: none; /* Menghilangkan outline default */
+}
+
+/* Tombol */
+button {
+  align-self: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4caf50; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none;
+  border-radius: 4px; /* Sudut membulat tombol */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+  margin-top: 20px; /* Memberikan jarak antara tombol dan form */
+}
+
+button:hover {
+  background-color: #45a049; /* Warna latar belakang tombol saat hover */
+}
+
+button:active {
+  background-color: #388e3c; /* Warna latar belakang tombol saat diklik */
+}
+
+/* Menambahkan efek responsif */
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    padding: 0 15px; /* Memberikan padding sisi kiri dan kanan */
+  }
+
+  input, button {
+    font-size: 14px; /* Mengurangi ukuran font pada layar kecil */
+  }
+}

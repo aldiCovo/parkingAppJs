@@ -1,0 +1,60 @@
+/* Styling untuk Stage (area parkir) */
+.stage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #f0f0f0; /* Latar belakang abu-abu terang untuk area parkir */
+  border-radius: 10px; /* Sudut membulat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk memberi efek kedalaman */
+  padding: 20px;
+  width: 100%;
+  max-width: 550px;
+  overflow: hidden; /* Memastikan elemen tidak keluar dari area */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling untuk slot parkir */
+.parking-slot {
+  cursor: pointer; /* Memberikan efek pointer ketika hover */
+  transition: transform 0.3s ease, fill 0.3s ease; /* Efek transisi saat slot di-klik atau di-hover */
+  border: 2px solid #ddd; /* Border tipis */
+}
+
+.parking-slot:hover {
+  transform: scale(1.1); /* Memperbesar sedikit saat hover */
+  fill: rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan ketika hover */
+}
+
+/* Styling untuk ID slot parkir */
+.parking-slot-text {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  fill: #fff; /* Warna teks putih */
+}
+
+/* Responsif: Memastikan peta tetap proporsional pada layar kecil */
+@media (max-width: 600px) {
+  .stage-container {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .parking-slot-text {
+      font-size: 12px; /* Ukuran teks lebih kecil untuk layar kecil */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .stage-container {
+      margin: 15px;
+      padding: 15px;
+  }
+
+  .parking-slot-text {
+      font-size: 14px; /* Ukuran font menyesuaikan antara desktop dan tablet */
+  }
+}
